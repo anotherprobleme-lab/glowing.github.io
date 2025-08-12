@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/png" href="">
+    <style>
+       
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+        body{
+            /*background: linear-gradient(rgb(156, 0, 151), rgb(255, 0, 187), red, rgb(255, 128, 0), rgb(255, 255, 111));*/
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        form{
+            display: flexbox;
+            justify-content: center;
+            align-items:center ;
+            text-align: center;
+            /*display: grid;
+            place-items: center;*/
+            height: 46vh;
+            width: 35vh;
+            padding: 2vh;
+            background-color: rgba(255, 255, 255, 0.99);
+            border: 0.2vh solid rgba(0, 0, 0, 0.109);
+            margin: 10em auto;
+            border-radius: 1vh;
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.163);
+        }
+        img{
+            width: 70%;
+            user-select: none;
+        }
+        input{
+            background-color: rgb(232, 232, 232);
+            display: block;
+            outline: 0;
+            border: 0.1vh solid rgba(0, 0, 0, 0.103);
+            margin: 0vh auto;
+            padding: 1vh 2vh;
+            border-radius: 0.3vh;
+            margin-top: 2vh;
+            width: 90%;
+            font-size: 80%;
+        }
+        button{
+            background-color: #1d6dee;
+            color: white;
+            padding: 1vh 0vh;
+            border-radius: 1vh;
+            outline: 0;
+            border: 0.1vh solid rgba(0, 0, 0, 0.092);
+            width: 90%;
+            margin-top: 2vh;
+            font-size: 80%;
+            cursor: pointer;
+        }
+        #or{
+            margin: 2vh;
+            position: relative;
+            user-select: none;
+        }
+        #or2:after{
+            content: "";
+            position: absolute;
+            
+            right: 10%;
+            top: 10%;
+            height: 1px;
+            width: 8vh;
+            background-color: black;
+        }
+        #or2{
+            font-weight: 600;
+        }
+        #or2:before{
+            content: "";
+            position: absolute;
+            left: 10%;
+            top: 10%;
+            height: 1px;
+            width: 8vh;
+            background-color: black;
+        }
+        p{
+            font-size: 80%;
+            margin: 2vh;
+        }
+        #fb{
+            font-size: 80%;
+            margin: 2vh;
+            color: #428aff;
+        }
+        #fb:before{
+            content: "";
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.3vh;
+        }
+        #for{
+            font-size: 80%;
+            margin: 2vh;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="form">
+            
+            <form action="" method="post">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png" alt="">
+                <input type="text" name="login" placeholder="Имя пользователя" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+                <div id="or">
+                    <p id="or2">или</p>
+                    <p id="fb">Войти через Facebook</p>
+                    <p id="for">Забыли пароль?</p>
+                </div>
+                
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
